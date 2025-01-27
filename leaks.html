@@ -3,76 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TITAN LEAKS</title>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap"
-    rel="stylesheet"
-  />
+  <title>TITAN Leaks</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- Hintergrundvideo oder Bild (optional) -->
-  <video autoplay muted loop id="bg-video">
-    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4"/>
-    Dein Browser unterstützt kein HTML5-Video.
-  </video>
-  <div id="overlay"></div>
 
-  <!-- Navigation -->
+  <!-- Navbar -->
   <nav class="navbar">
-    <div class="logo">TITAN</div>
+    <div class="logo" data-key="navTitle">TITAN</div>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="leaks.html" class="active">Leaks</a></li>
-      <li><a href="#">Operations</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="index.html" data-key="navHome">Home</a></li>
+      <li><a href="leaks.html" data-key="navLeaks">Leaks</a></li>
+      <li><a href="contact.html" data-key="navContact">Contact</a></li>
     </ul>
+    <div class="lang-switch">
+      <button id="btn-de">DE</button> | <button id="btn-en">EN</button>
+    </div>
   </nav>
 
-  <!-- Leaks-Header mit Glitch-Effekt -->
-  <header class="hero-section small-hero">
-    <h1 class="glitch" data-text="THE LEAKS">THE LEAKS</h1>
-    <p>Deep, Dark, Classified – Only for Titan's Eyes</p>
-  </header>
+  <section class="hero-section small-hero">
+    <h1 data-key="leaksTitle">Leaks</h1>
+    <p data-key="leaksSubtitle">Neueste Enthüllungen</p>
+  </section>
 
-  <!-- Übersicht aller Leaks -->
+  <!-- Bereich, in dem wir die Leaks per JS einfügen -->
   <section class="leaks-section">
-    <div class="leaks-container">
-      <article class="leak-item">
-        <h2>Leak #001 – Government Corruption Files</h2>
-        <p>
-          Enthält streng geheime Dokumente über politische Machenschaften,
-          Insider-Absprachen und schockierende Enthüllungen. Nur für 
-          <strong>Titan</strong>-Mitglieder.
-        </p>
-        <a href="#" class="card-button">Zum Download</a>
-      </article>
-      <article class="leak-item">
-        <h2>Leak #002 – Corporate Espionage Database</h2>
-        <p>
-          Datenabzug von multinationalen Konzernen – Patente, geheime 
-          Prototypen und Black-Hat Taktiken.
-        </p>
-        <a href="#" class="card-button">Zum Download</a>
-      </article>
-      <article class="leak-item">
-        <h2>Leak #003 – Classified Military Archives</h2>
-        <p>
-          Hochbrisante Infos zu Waffenentwicklung, Cyberwarfare-Programmen 
-          und verdeckten Operationen.
-        </p>
-        <a href="#" class="card-button">Zum Download</a>
-      </article>
-      <!-- Mehr Leaks nach Bedarf hinzufügen... -->
+    <div class="leaks-container" id="leaks-container">
+      <!-- Dynamische Leak-Items kommen per JavaScript -->
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <p>© 2025 Titan Service – All Rights Reserved. Powered by TS</p>
   </footer>
 
-  <!-- Skript -->
   <script src="js/main.js"></script>
 </body>
 </html>
