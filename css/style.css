@@ -1,0 +1,165 @@
+/* Body Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+  background: #000;
+  color: #fff;
+}
+
+/* Hintergrundvideo */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+
+/* Dark Overlay, um das Video abzudunkeln */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: transparent; /* oder rgba(0, 0, 0, 0.8) */
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0aff9d;
+  text-transform: uppercase;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.nav-links li a:hover {
+  color: #0aff9d;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+  padding: 20px;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-section h1 span {
+  color: #0aff9d;
+}
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.cta-button {
+  padding: 15px 30px;
+  background: #0aff9d;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.cta-button:hover {
+  background: #00f5ff;
+  transform: scale(1.05);
+}
+
+/* Content Section */
+.content-section {
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  background: #121212;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+.card h3 {
+  margin-bottom: 10px;
+  color: #0aff9d;
+}
+.card p {
+  color: #bbb;
+  margin-bottom: 20px;
+}
+.card-button {
+  display: inline-block;
+  background: #0aff9d;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.card-button:hover {
+  background: #00f5ff;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  color: #777;
+  position: relative;
+}
+.footer p {
+  margin: 0;
+}
