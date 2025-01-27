@@ -8,6 +8,24 @@
 </head>
 <body>
 
+  <!-- TOP NAV -->
+  <header class="top-nav">
+    <div class="nav-left">
+      <div class="logo" data-key="navTitle">TITAN</div>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" data-key="navHome">Home</a></li>
+        <li><a href="leaks.html" data-key="navLeaks" class="active">Leaks</a></li>
+        <li><a href="contact.html" data-key="navContact">Contact</a></li>
+      </ul>
+      <div class="lang-switch">
+        <button id="btn-de">DE</button> | 
+        <button id="btn-en">EN</button>
+      </div>
+    </div>
+  </header>
+
   <main class="content">
     <section class="hero-section small-hero leaks-hero">
       <div class="hero-text">
@@ -18,25 +36,10 @@
 
     <section class="leaks-section">
       <div class="leaks-container" id="leaks-container">
-        <!-- Wird per JS aus leaks.json generiert -->
+        <!-- Wird per JS (main.js) generiert -->
       </div>
     </section>
   </main>
-
-  <!-- Sidebar Navigation rechts -->
-  <aside class="sidebar-right">
-    <div class="sidebar-logo" data-key="navTitle">TITAN</div>
-    <nav class="sidebar-nav">
-      <ul>
-        <li><a href="index.html" data-key="navHome">Home</a></li>
-        <li><a href="leaks.html" data-key="navLeaks" class="active">Leaks</a></li>
-        <li><a href="contact.html" data-key="navContact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="sidebar-lang">
-      <button id="btn-de">DE</button> | <button id="btn-en">EN</button>
-    </div>
-  </aside>
 
   <footer class="footer">
     <p>© 2025 Titan Service – All Rights Reserved. Powered by TS</p>

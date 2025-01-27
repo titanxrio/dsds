@@ -8,8 +8,25 @@
 </head>
 <body>
 
+  <!-- TOP NAV -->
+  <header class="top-nav">
+    <div class="nav-left">
+      <div class="logo" data-key="navTitle">TITAN</div>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" data-key="navHome">Home</a></li>
+        <li><a href="leaks.html" data-key="navLeaks">Leaks</a></li>
+        <li><a href="contact.html" data-key="navContact" class="active">Contact</a></li>
+      </ul>
+      <div class="lang-switch">
+        <button id="btn-de">DE</button> | 
+        <button id="btn-en">EN</button>
+      </div>
+    </div>
+  </header>
+
   <main class="content">
-    <!-- Extra großer Hero, um “Kontakt” dicker in Szene zu setzen -->
     <section class="hero-section big-hero contact-hero">
       <div class="hero-text">
         <h1 data-key="contactTitle">Kontakt</h1>
@@ -23,42 +40,19 @@
         <hr />
       </div>
       <p>
-        Discord-Einladungslink: 
-        <a href="https://discord.gg/DEIN_SERVER" target="_blank">Join</a><br/>
-        Egal ob Fragen, Diskussionen oder Infos: Im Discord geht die Post ab.
+        Discord-Invite-Link: 
+        <a href="https://discord.gg/DEIN_SERVER" target="_blank">Join</a>.
       </p>
 
-      <!-- Demo: Kontaktformular oder Extra-Infos -->
-      <div class="contact-box">
-        <h3>Kontaktformular</h3>
-        <p>Falls du uns via E-Mail erreichen willst, nutze dieses Mini-Form (Demo-HTML, ohne Backendscript):</p>
-        <form>
-          <label for="name">Name:</label><br/>
-          <input type="text" id="name" name="name"><br/><br/>
-          
-          <label for="message">Nachricht:</label><br/>
-          <textarea id="message" name="message" rows="5"></textarea><br/><br/>
-
-          <button type="submit">Senden</button>
-        </form>
+      <div class="roles">
+        <h3>Team</h3>
+        <ul>
+          <li><strong>Owner:</strong> Titan (Discord: Titan#0001)</li>
+          <li><strong>Co-Owner:</strong> Dein Mitarbeiter (Discord: CoOwner#9999)</li>
+        </ul>
       </div>
     </section>
   </main>
-
-  <!-- Sidebar Navigation rechts -->
-  <aside class="sidebar-right">
-    <div class="sidebar-logo" data-key="navTitle">TITAN</div>
-    <nav class="sidebar-nav">
-      <ul>
-        <li><a href="index.html" data-key="navHome">Home</a></li>
-        <li><a href="leaks.html" data-key="navLeaks">Leaks</a></li>
-        <li><a href="contact.html" data-key="navContact" class="active">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="sidebar-lang">
-      <button id="btn-de">DE</button> | <button id="btn-en">EN</button>
-    </div>
-  </aside>
 
   <footer class="footer">
     <p>© 2025 Titan Service – All Rights Reserved. Powered by TS</p>
