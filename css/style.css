@@ -1,0 +1,261 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+html, body {
+  height: 100%;
+  background: #000;
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
+}
+
+/* OPTIONALER GLOBALER BACKGROUND (entweder uni oder leicht texturiert) */
+body {
+  background-color: #000;
+  /* Du kannst auch z.B.:
+  background-image: radial-gradient(#111 5%, #000 95%);
+  background-size: cover;
+  */
+}
+
+/* MAIN CONTENT */
+.content {
+  width: calc(100% - 220px); /* Platz für Sidebar, 220px breit */
+  min-height: 100vh;
+  float: left;
+}
+
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 40px 20px;
+  border-bottom: 1px solid #333;
+}
+.hero-text {
+  max-width: 800px;
+  margin: auto;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero-section p {
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+/* Spezialisierte Heroes (Größe/Hintergrund) */
+.home-hero {
+  height: 70vh;
+  background: #000; /* fallback */
+}
+.leaks-hero {
+  height: 50vh;
+  background: #111;
+}
+.big-hero.contact-hero {
+  height: 80vh;
+  background: #111;
+  /* OPTIONAL: fette Kontaktgrafik/Hintergrundbild
+     background-image: url('https://example.com/your-contact-image.jpg');
+     background-size: cover;
+     background-position: center;
+     etc.
+  */
+}
+
+/* CONTENT SECTION */
+.content-section {
+  padding: 40px 20px;
+  background-color: #111;
+  margin-top: 0;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-header h2 {
+  font-size: 2rem;
+}
+.section-header hr {
+  border: none;
+  border-top: 1px solid #333;
+  width: 60px;
+  margin: 10px auto 0 auto;
+}
+.content-section p {
+  line-height: 1.5em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* CONTACT FORM SPECIAL */
+.contact-box {
+  background: #222;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 6px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-box h3 {
+  margin-bottom: 10px;
+  color: #0aff9d;
+}
+.contact-box label {
+  font-weight: bold;
+}
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  background: #333;
+  border: 1px solid #555;
+  color: #fff;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+.contact-box button {
+  margin-top: 10px;
+  background: #0aff9d;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.contact-box button:hover {
+  background: #00f5ff;
+}
+
+/* SIDEBAR RECHTS */
+.sidebar-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 100%;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.8);
+  /* Subtile Animation on hover if you want:
+  transition: width 0.3s;
+  */
+}
+.sidebar-logo {
+  font-size: 1.8rem;
+  color: #0aff9d;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+.sidebar-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sidebar-nav ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+.sidebar-nav li {
+  margin: 10px 0;
+}
+.sidebar-nav li a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background 0.2s, color 0.2s;
+}
+.sidebar-nav li a:hover {
+  background: #0aff9d;
+  color: #000;
+}
+.sidebar-nav li a.active {
+  background: #0aff9d;
+  color: #000;
+}
+.sidebar-lang {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sidebar-lang button {
+  background: none;
+  border: none;
+  color: #ccc;
+  margin: 0 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.sidebar-lang button:hover {
+  color: #0aff9d;
+}
+
+/* LEAKS SECTION */
+.leaks-section {
+  background: #111;
+  padding: 40px 20px;
+}
+.leaks-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.leak-item {
+  background: #222;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+.leak-date {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 5px;
+}
+.leak-item h2 {
+  color: #0aff9d;
+  margin-bottom: 10px;
+}
+.leak-item p {
+  line-height: 1.4em;
+  white-space: pre-line;
+}
+.leak-item a {
+  color: #0aff9d;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.leak-item a:hover {
+  color: #00f5ff;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #000;
+  border-top: 1px solid #333;
+  color: #777;
+  position: relative;
+  /* Damit Footer unten bleibt, 
+     kannst du 'margin-top' auf content-section anpassen */
+}
