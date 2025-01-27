@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Legal Leak #434",
+    "date": "2025-02-01",
+    "description": "Enthüllt geheime Dokumente über ...",
+    "files": ["LegalLeak434.txt"]
+  },
+  {
+    "title": "UltraSecret Report",
+    "date": "2025-01-30",
+    "description": "Brisante Informationen zum Thema X.\nNur für Titan.",
+    "files": ["UltraSecretReport.pdf", "SomeOtherFile.txt"]
+  }
+]

@@ -3,45 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TITAN Home</title>
+  <title>TITAN - Home</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo" data-key="navTitle">TITAN</div>
-    <ul class="nav-links">
-      <li><a href="index.html" data-key="navHome">Home</a></li>
-      <li><a href="leaks.html" data-key="navLeaks">Leaks</a></li>
-      <li><a href="contact.html" data-key="navContact">Contact</a></li>
-    </ul>
-    <div class="lang-switch">
-      <!-- Buttons, die per JS die Sprache toggeln -->
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <div class="sidebar-logo" data-key="navTitle">TITAN</div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="index.html" data-key="navHome">Home</a></li>
+        <li><a href="leaks.html" data-key="navLeaks">Leaks</a></li>
+        <li><a href="contact.html" data-key="navContact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-lang">
       <button id="btn-de">DE</button> | <button id="btn-en">EN</button>
     </div>
-  </nav>
+  </aside>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <h1 data-key="homeTitle">Willkommen bei Titan!</h1>
-    <p data-key="homeSubtitle">
-      Deine ultimative Cyber-Dominanz im Clean-Style.
-    </p>
-  </section>
+  <!-- Main Content -->
+  <main class="content">
+    <section class="hero-section">
+      <h1 data-key="homeTitle">Willkommen bei Titan!</h1>
+      <p data-key="homeSubtitle">Deine ultimative Cyber-Dominanz im Clean-Style.</p>
+    </section>
 
-  <!-- Content Section -->
-  <section class="content-section">
-    <div class="section-header">
-      <h2>Überblick</h2>
-      <hr />
-    </div>
-    <p>
-      Hier könnte dein epischer Intro-Text stehen. Beherrsche den Cyberspace 
-      mit Stil und ohne übertriebenen Schnickschnack.
-    </p>
-  </section>
+    <section class="content-section">
+      <div class="section-header">
+        <h2>Überblick</h2>
+        <hr />
+      </div>
+      <p>
+        Hier könnte dein epischer Intro-Text stehen. Beherrsche den Cyberspace 
+        mit Stil und dezenter Coolness. Minimaler Effekt, maximaler Eindruck.
+      </p>
+    </section>
+  </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <p>© 2025 Titan Service – All Rights Reserved. Powered by TS</p>
   </footer>

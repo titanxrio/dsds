@@ -3,37 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TITAN Contact</title>
+  <title>TITAN - Contact</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="logo" data-key="navTitle">TITAN</div>
-    <ul class="nav-links">
-      <li><a href="index.html" data-key="navHome">Home</a></li>
-      <li><a href="leaks.html" data-key="navLeaks">Leaks</a></li>
-      <li><a href="contact.html" data-key="navContact">Contact</a></li>
-    </ul>
-    <div class="lang-switch">
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <div class="sidebar-logo" data-key="navTitle">TITAN</div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="index.html" data-key="navHome">Home</a></li>
+        <li><a href="leaks.html" data-key="navLeaks">Leaks</a></li>
+        <li><a href="contact.html" data-key="navContact" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-lang">
       <button id="btn-de">DE</button> | <button id="btn-en">EN</button>
     </div>
-  </nav>
+  </aside>
 
-  <section class="hero-section small-hero">
-    <h1 data-key="contactTitle">Kontakt</h1>
-    <p data-key="contactSubtitle">Hier findest du alles rund um unseren Discord etc.</p>
-  </section>
+  <!-- Main Content -->
+  <main class="content">
+    <section class="hero-section small-hero">
+      <h1 data-key="contactTitle">Kontakt</h1>
+      <p data-key="contactSubtitle">Hier findest du alles rund um unseren Discord etc.</p>
+    </section>
 
-  <section class="content-section">
-    <div class="section-header">
-      <h2 data-key="discordLabel">Unser Discord-Server</h2>
-      <hr />
-    </div>
-    <p>
-      Hier dein Einladungslink: <a href="https://discord.gg/deinServer" target="_blank">Join</a>
-    </p>
-  </section>
+    <section class="content-section">
+      <div class="section-header">
+        <h2 data-key="discordLabel">Unser Discord-Server</h2>
+        <hr />
+      </div>
+      <p>
+        Discord-Einladungslink: 
+        <a href="https://discord.gg/DEIN_SERVER" target="_blank">Join</a>.
+      </p>
+    </section>
+  </main>
 
   <footer class="footer">
     <p>© 2025 Titan Service – All Rights Reserved. Powered by TS</p>
